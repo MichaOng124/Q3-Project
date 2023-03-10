@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Bebas+Neue&family=Monofett&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<title>Website on Fire</title>
+	<style type="text/css">
+        header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #FF583D;
+        z-index: 3;
+        }
+        main{
+          margin-top: 100px;
+        }
+        body{
+        background: url('bgimage.jpg');
+    		background-size: cover;
+    		background-attachment: fixed;
+        margin: 0px;
+      }
+      #div2{
+      background-color:  orangered;
+      font-size: 30px;
+      text-align: center;
+      color: white;
+      background-color: rgba(400, 100, 0, 0.4);
+      text-shadow: 2px 2px 3px black;
+      padding: 1px 20px 20px 20px;
+      margin-top: 80px;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+}
+      /* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  z-index: 4;
+
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 30px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Bebas Neue', cursive;
+  z-index: 4;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 70px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  display: block;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+#followButton {
+  position: fixed;
+  top: 27px;
+  left: 27px;
+  width: 7%;
+  height: 8%;
+  z-index: 4;
+  display: block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  font-family: 'Bebas Neue', cursive;
+
+}
+table{
+  z-index: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+img[usemap] {
+  display: block;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border: solid orangered;
+  border-width: 10px;
+}
+area{
+  position: absolute;
+}
+@media only screen and (max-width: 600px) {
+  #followButton {
+    font-size: 1em;
+    padding: 8px 16px;
+</style>
+</head>
+<body>
+  <script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+  function toggleSidebar() {
+  var sidebar = document.getElementById("mySidebar");
+  var content = document.getElementById("main");
+  if (sidebar.style.width === "250px") {
+    // close the sidebar
+    sidebar.style.width = "0";
+    content.style.marginLeft = "0";
+  } else {
+    // open the sidebar
+    sidebar.style.width = "250px";
+    content.style.marginLeft = "250px";
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("followButton").style.display = "block";
+  } else {
+    document.getElementById("followButton").style.display = "block";
+  }
+}
+  </script>
+
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn"></a>
+  <a target="_blank" href="about.html" target="blank">About</a>
+  <a target="_blank" href="https://www.facebook.com/txtfire">Facebook</a>
+  <a target="_blank" href="https://www.instagram.com/explore/tags/txtfire/top/?hl=en">Instagram</a>
+  <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a>
+  <a target="_blank" href="contactus.html">Contact us</a>
+</div>
+
+<div class="container" id="main">
+  <button id="followButton" class="btn btn-dark openbtn resize text-truncate" onclick="toggleSidebar()">&#9776; Menu</button>
+</div>
+
+<header><a href="about.html"><img src="flban3.1.png" width="25%" height="25%" style="display: block; margin: auto; margin-top: 5px; margin-bottom: 5px;"></a>
+    </header>
+</div><br><br>
+  <div class="container" id="div2">
+    <h1><b>The Hazard House</b></h1>
+    <p><b>Firelight uses visual and responsive media to help people learn more about safety awareness- in a fun way!</b> Below is the image of an unsafe house that could catch flames at any moment. Spot the hazards and click on them to see if your answer is correct. There are 8 answers.</p>
+  </div>
+  <div class="container" id="unsafe">
+  <br><br>
+<img src="unsafe.png" usemap="#image-map" class="img-fluid">
+<map name="image-map" id="unsafe">    
+  <area target="_blank" alt="newspaper" href="newspaper.html" coords="119,850,16"shape="circle" style="cursor: default;">
+    <area target="_blank" alt="doorbell" href="doorbell.html" coords="589,791,16" shape="circle" style="cursor: default;" >
+    <area target="_blank" alt="stove" href="stove.html" coords="774,753,18" shape="circle" style="cursor: default;">
+    <area target="_blank" alt="candle" href="candle.html" coords="627,487,19" shape="circle" style="cursor: default;">
+    <area target="_blank" alt="towel" href="towel.html" coords="778,677,806,737" shape="rect" style="cursor: default;">
+    <area target="_blank" alt="outlet" href="outlet.html" coords="169,528,13" shape="circle" style="cursor: default;">
+    <area target="_blank" alt="cigar" href="cigar.html" coords="339,227,19" shape="circle"style="cursor: default;">
+    <area target="_blank" alt="iron" href="iron.html" coords="164,461,216,484" shape="rect" style="cursor: default;">
+</map>
+  </div>
+<div class="container" id="div2">
+    <h1><b>Once you've found them all, scroll down to see the answers.<br><br> Don't scroll past this point if you don't wanna see it!</b></h1>
+  </div><br><br><br><br><br><br>
+  <div class="container">
+    <table class="table table-bordered table-danger">
+      <tr>
+        <th class="col-sm-3" bg-danger><h1>Cigar</h1></th>
+        <th class="col-sm-3" bg-danger><h1>Iron</h1></th> 
+        <th class="col-sm-3" bg-danger><h1>Outlet</h1></th>
+        <th class="col-sm-3" bg-danger><h1>Candle</h1></th>
+      </tr>
+    <tbody>
+      <tr>
+      <td><img src="tabcigar.jpg" width="100%" height="100%" style="display: block; margin: 0 auto;">
+      <p><h2>You found the <u>Cigar!</u></h2>
+      A cigar is left unextinguished on the topmost floor. <b>Cigarettes</b> that have not been properly extinguished and disposed of cause one in 12 house fires in the UK of accidental house fires and over a third (36%) of deaths in house fires.
+      </p></td>
+      <td><img src="tabiron.jpg" width="100%" height="100%" style="display: block; margin: 0 auto;">
+      <p><h2>You found the <u>Iron!</u></h2>
+      A hair straightening iron was left plugged in. Over 650,000 house fires in the UK have been caused by <b>straighteners or curlers being left on</b>. Always make sure to check that you have <b><u>turned off styling tools</u></b> once you have finished using them.
+      </p></td>
+      <td><img src="taboutlet.jpg" width="100%" height="100%" style="display: block; margin: 0 auto;">
+      <p><h2>You found the <u>Outlet!</u></h2>
+      An outlet is installed behind the toilet in the bathroom for some reason. There should be a <b><u>3m gap between any sockets and a bath/shower</u></b> as dictated by the Building Regulations rules in the UK. Water getting into sockets can overwhelm its circuit, producing sparks and causing an electrical fire.
+      </p></td>
+      <td><img src="tabcandle.jpg" width="100%" height="100%" style="display: block; margin: 0 auto;">
+      <p><h2>You found the <u>Candle!</u></h2>
+      An open candle is left next to curtains. 950 house fires were caused by candles in 2020-21, that is nearly 3 per day. <b>LED flameless candles</b> are a great, and safe alternative. 
+      </p></td>
+      </tr>
+    </tbody>
+    <tr>
+        <th class="col-sm-3" bg-danger><h1>Newspaper</h1></th>
+        <th class="col-sm-3" bg-danger><h1>Doorbell</h1></th> 
+        <th class="col-sm-3" bg-danger><h1>Stove</h1></th>
+        <th class="col-sm-3" bg-danger><h1>Towel</h1></th>
+      </tr>
+    <tbody>
+      <tr>
+      <td><img src="tabnewspaper.jpg" width="100%" height="100%" style="display: block; margin: 0 auto;">
+      <p><h2>You found the <u>Newspaper!</u></h2>
+      The newspaper is too close to the open fire. The fireplace also doesn't seem to have a gate. It is recommended that you put a fire out <b>45 minutes before you leave the room</b> in order to let the ashes cool whilst you are there to keep an eye out for any sparks or hazards. Watch out for materials such as <b>paper, cotton, and viscose as they are <u>highly flammable</u></b>.</p></td>
+      <td><img src="tabdoorbell.jpg" width="100%" height="100%" style="display: block; margin: 0 auto;">
+      <p><h2>You found the <u>Doorbell!</u></h2> 
+      Or lack thereof. 53% of accidental house fires are caused by <b>electrical faults</b>, and over 700 injuries are caused by them each year. Just under 10% of accidental fires are caused specifically by <b><u>faults in wires, cabling and plugs</u></b>.</p></td>
+      <td><img src="tabstove.jpg" width="100%" height="100%" style="display: block; margin: 0 auto;">
+      <p><h2>You found the <u>Stove!</u></h2>
+      The stove as been left on. <b>Cooking appliances</b> are responsible for a whopping 46% of all accidental house fires per year. Over 7,500 fires were caused by cookers and 1,400 by heated stovetops left on between 2020-21. It is important to remember to check that ovens, microwaves, toastes, stoves, and all other <b><u>kitchen appliances are turned off fully after cooking</u></b>.</td>
+      <td><img src="tabtowel.jpg" width="100%" height="100%" style="display: block; margin: 0 auto;">
+      <p><h2>You found the <u>Towel!</u></h2>
+      A towel is hung over a stovetop. <b>Light and flammable kitchen items, like towels and rags,</b> are responsible for 30% of kitchen fires yearly. These household items <b><u>should not be stored or placed</u></b> near elctrical kitchenware and heating elements, like ovens. Most importantly, they should not be near <b>open flames</b>. 
+      </p></td>
+      </tr>
+    </tbody>        
+  </table>
+</div>
+
+
+
+  <!-- References
+
+Anderson, Z. (2022, February 26). Freshly-Washed Towels “Spontaneously Combust” Inside Oregon Restaurant. IHeart. https://www.iheart.com/content/2022-02-25-freshly-washed-towels-spontaneously-combust-inside-oregon-restaurant/
+
+Bathroom Projects | Designer Switches and Outlets | Legrand. (n.d.). Www.legrand.us. Retrieved March 9, 2023, from https://www.legrand.us/ideas/projects-and-inspiration/bathroom
+
+Brayson, J. (2023, January 17). Are Gas Stoves Going to Be Banned? Here’s What You Need to Know. Gear Patrol. https://www.gearpatrol.com/home/a42534412/gas-stove-ban/
+
+Chris. (2022, June 24). Fire Hazard Brainteaser | CIA Landlord Insurance. CIA Landlords. https://www.cia-landlords.co.uk/news/fire-hazard-brainteaser/
+
+Edwards, A. (2013, April 3). Pictured: The terrifying aftermath of a fire which left a woman unconscious after leaving her hair straighteners switched on. Mail Online. https://www.dailymail.co.uk/news/article-2303486/Hair-straightener-The-terrifying-aftermath-left-woman-unconscious-leaving-hair-straighteners-switched-on.html
+
+JÄMNMOD Scented pillar candle, Sweet pea/purple, 30 hr. (n.d.). IKEA. Retrieved March 9, 2023, from https://www.ikea.com/ph/en/p/jaemnmod-scented-pillar-candle-sweet-pea-purple-90502224/
+
+Janyala, S. (2021, April 14). Cigarette butts caused 4,187 fires in Telangana in 2020, prompted 19,470 alerts to forest dept. The Indian Express. https://indianexpress.com/article/cities/hyderabad/cigarette-butts-caused-4187-fires-in-telangana-in-2020-prompted-19470-alerts-to-forest-dept-7273499/
+
+Talina. (n.d.). Burning Newspaper | Fire photography, Newspaper photo, Photoshoot concept. Pinterest. Retrieved March 9, 2023, from https://www.pinterest.ph/pin/33284484734810738/-->
+</body>
+</html>

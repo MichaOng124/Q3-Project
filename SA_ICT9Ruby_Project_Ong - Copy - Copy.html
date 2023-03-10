@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Website on Fire</title>
+	<style type="text/css">
+        body{
+			background: url('bgimage.jpg');
+    		background-size: cover;
+    		background-attachment: fixed;
+    		padding: 20p;
+      }
+      #div1{
+        padding: 25px;
+        background-color: rgba(1, 0, 0, 0.4);
+        height: 320px;
+        width: 1300px;
+        text-align: center;
+        font-size: 25px;
+        color: whitesmoke;
+        margin: auto;      
+      }
+
+
+      /* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 30px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+#followButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+
+  <script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+  function toggleSidebar() {
+  var sidebar = document.getElementById("mySidebar");
+  var content = document.getElementById("main");
+  if (sidebar.style.width === "250px") {
+    // close the sidebar
+    sidebar.style.width = "0";
+    content.style.marginLeft = "0";
+  } else {
+    // open the sidebar
+    sidebar.style.width = "250px";
+    content.style.marginLeft = "250px";
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("followButton").style.display = "block";
+  } else {
+    document.getElementById("followButton").style.display = "none";
+  }
+}
+  </script>
+
+
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn"></a>
+  <a href=".html">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <button id="followButton" class="openbtn" onclick="toggleSidebar()">&#9776; Menu</button>
+</div>
+
+
+
+  <div class="container" id="div1">
+    <p>Firelight is a non-profit organiation dedicated to raising awareness about fire safety. Our main goal is to help you create a plan of action to prevent fires from occuring. But more importantly, we train you to survive when one does happen. Fires can occur at any time, and they cause property damage, injury, and even loss of life. Using our online tools, we train you to be perceptive, decisive, and smart about the choices you make during adversities.<br><br>
+
+    <b>The Firelight Motto</b><br><br>
+
+    "Light up safety, extinguish the risk - trust Firelight to protect."<br><br>
+    -Our Founder, Michaela Ong
+  </p>
+  </div>
+      
+</body>
+</html>

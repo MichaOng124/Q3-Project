@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Bebas+Neue&family=Monofett&display=swap" rel="stylesheet">
+  <title>Contact Firelight</title>
+  <style type="text/css">
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #FF583D;
+        z-index: 3;
+        }
+        main{
+          margin-top: 100px;
+        }
+        body{
+        background: url('bgimage.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+        margin: 0px;
+        padding-top: 100px; 
+      }
+      #divuno{
+      z-index: 1; 
+      padding: 20px;
+      text-align: center;
+      padding: 25px;
+      background-color: rgba(1, 0, 0, 0.7);
+      height: auto;
+      width: auto;
+      text-align: center;
+      font-size: 25px;
+      color: whitesmoke;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      }
+      label{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+          font-size: 20px;
+      }
+      h2{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+      }
+      .sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  z-index: 4;
+
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 30px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Bebas Neue', cursive;
+  z-index: 4;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 70px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  display: block;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+#followButton {
+  position: fixed;
+  top: 27px;
+  left: 27px;
+  width: 7%;
+  height: 8%;
+  z-index: 4;
+  display: block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  font-family: 'Bebas Neue', cursive;
+}
+table{
+  z-index: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+img[usemap] {
+  display: block;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border: solid orangered;
+  border-width: 10px;
+}
+area{
+  position: absolute;
+}
+p{
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media only screen and (max-width: 600px) {
+  #followButton {
+    font-size: 1em;
+    padding: 8px 16px;
+</style>
+<head>
+<body>
+<script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+  function toggleSidebar() {
+  var sidebar = document.getElementById("mySidebar");
+  var content = document.getElementById("main");
+  if (sidebar.style.width === "250px") {
+    // close the sidebar
+    sidebar.style.width = "0";
+    content.style.marginLeft = "0";
+  } else {
+    // open the sidebar
+    sidebar.style.width = "250px";
+    content.style.marginLeft = "250px";
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("followButton").style.display = "block";
+  } else {
+    document.getElementById("followButton").style.display = "block";
+  }
+}
+  </script>
+  
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn"></a>
+  <a target="_blank" href="about.html" target="blank">About</a>
+  <a target="_blank" href="https://www.facebook.com/txtfire">Facebook</a>
+  <a target="_blank" href="https://www.instagram.com/explore/tags/txtfire/top/?hl=en">Instagram</a>
+  <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a>
+  <a target="_blank" href="contactus.html">Contact us</a>
+</div>
+
+
+<div class="container" id="main">
+  <button id="followButton" class="btn btn-dark openbtn resize text-truncate" onclick="toggleSidebar()">&#9776; </button>
+</div>
+   <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn"></a>
+  <a target="_blank" href="about.html" target="blank">About</a>
+  <a target="_blank" href="https://www.facebook.com/txtfire">Facebook</a>
+  <a target="_blank" href="https://www.instagram.com/explore/tags/txtfire/top/?hl=en">Instagram</a>
+  <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a>
+  <a target="_blank" href="contactus.html">Contact us</a>
+</div>
+
+<div id="main">
+  <button id="followButton" class="button openbtn resize text-truncate" onclick="toggleSidebar()">&#9776; Menu</button>
+</div>
+
+  <header><a href="about.html"><img src="flban3.1.png" width="25%" height="25%" style="display: block; margin: auto; margin-top: 5px; margin-bottom: 5px;"></a>
+    </header>
+    <div class="container" id="divuno">
+      <h1><b>Contact Firelight</b></h1>
+      <p>If you have any questions, feedback, or concerns about fire safety, we would be more than happy to help. Our team of experts is always available to provide you with the assistance you need to ensure you and your loved ones are safe.<br><br>
+
+        To get in touch with us, you can send us an email at <b>info@firelight.org</b> or fill out this contact form. We will respond to your message as soon as possible and provide you with the information you need.<br><br>
+
+        Thank you for supporting Firelight, and we look forward to hearing from you soon.</p>
+      </div><br><br><br><br>
+
+<div class="container bg-danger">
+  <h2 style="text-align: center;"><b>Get in touch with us!</b></h2><br>
+  <form class="form-horizontal" action="/action_page.php">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Email:" name="email">
+          </div> 
+        </div>
+<div class="form-group">
+        <label class="control-label col-sm-2" for="name">Name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" placeholder="Name:" name="pwd">
+          </div> 
+        </div>
+<div class="form-group">
+        <label class="control-label col-sm-2" for="date">Date:</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" id="date" placeholder="Date:" name="date">
+          </div> 
+        </div>
+<div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Message us:</label>
+          <div class="col-sm-10">
+          <textarea name="message" rows="10" cols="30">
+            Send us your messages and questions...We are happy to help!
+          </textarea>
+      </div>  
+      <br><br>
+<div class="form-group">
+  <div class="col-sm-ofset-3 col-sm-9">
+    <button type="submit" class="btn btn-lg btn-success" style="margin-left: 210px; margin-top: 20px;">Submit</button>
+      <button type="reset" class="btn btn-lg btn-danger" style="margin-top: 20px;">Clear</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>
